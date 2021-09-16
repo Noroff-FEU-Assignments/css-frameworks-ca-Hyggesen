@@ -11,13 +11,14 @@ import ContactContent from "./components/Contact";
 import TheFooter from "./components/Footer";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import "./sass/style.scss";
 
 export default function App() {
   return (
     <Router>
       <div>
-        <Navbar expand="lg">
-          <Navbar.Brand href="/">Logo</Navbar.Brand>
+        <Navbar bg="dark" expand="lg">
+          <Navbar.Brand href="/">The YAY Company</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">

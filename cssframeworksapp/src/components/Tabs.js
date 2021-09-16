@@ -10,7 +10,7 @@ function TheTabs() {
   return (
     <div>
       <Tabs
-        defaultActiveKey="profile"
+        defaultActiveKey="first"
         id="uncontrolled-tab-example"
         className="mb-3"
       >

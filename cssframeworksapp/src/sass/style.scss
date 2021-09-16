@@ -1,0 +1,67 @@
+$color-primary: #e92569;
+$color-secondary: #767676;
+$color-nav-grey: #efefef;
+$color-input: #ffffff;
+$color-black: "#0A0A0A";
+$color-bg-grey: #e5e5e5;
+$font-playfair: "Playfair Display", serif;
+$font-lato: "Lato", sans-serif;
+
+// bootstrap
+$theme-colors: (
+  "primary": $color-primary,
+  "dark": $color-nav-grey,
+);
+
+$input-bg: $color-input;
+$input-border-color: $color-input;
+$border-radius: 4px;
+
+$input-placeholder-color: white;
+$nav-link-color: $color-black;
+$nav-link-font-size: 16px;
+$nav-link-font-weight: 400;
+
+$headings-color: $color-primary;
+
+$body-bg: $color-bg-grey;
+$body-color: $color-secondary;
+
+$card-bg: white;
+
+$btn-font-weight: medium;
+$btn-font-size: 16px;
+$btn-font-family: $font-lato;
+
+$form-label-font-size: 20px;
+$form-label-color: $color-secondary;
+
+$form-color-width: 10px;
+
+$font-family-base: $font-lato;
+$headings-font-family: $font-playfair;
+$headings-color: $color-primary;
+$headings-font-weight: 400;
+
+$nav-tabs-link-active-color: $color-secondary;
+$nav-link-color: $color-primary;
+$nav-link-hover-color: $color-primary;
+$nav-tabs-link-active-bg: white;
+$nav-tabs-border-radius: 10px;
+$nav-tabs-link-hover-border-color: none;
+
+$carousel-indicator-active-bg: $color-primary;
+$carousel-indicator-width: 20px;
+$carousel-indicator-height: 20px;
+
+$pagination-color: $color-primary;
+$pagination-border-color: $color-primary;
+$pagination-focus-color: white;
+$pagination-focus-bg: $color-primary;
+$pagination-disabled-border-color: none;
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./partials/tabs";
+
+@import "./partials//cards";
