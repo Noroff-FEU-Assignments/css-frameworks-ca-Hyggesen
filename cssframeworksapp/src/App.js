@@ -1,57 +1,52 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 import HomeContent from "./components/Home";
 import NewsContent from "./components/News";
 import ContactContent from "./components/Contact";
 import TheFooter from "./components/Footer";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link exact to="/">
+        <Navbar expand="lg">
+          <Navbar.Brand href="/">Logo</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <NavLink exact to="/" className="nav-link">
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/news">News</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+              </NavLink>
+              <NavLink to="/news" className="nav-link">
+                News
+              </NavLink>
+              <NavLink to="/contact" className="nav-link">
+                Contact
+              </NavLink>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
+          <Route exact path="/">
+            <HomeContent />
+          </Route>
           <Route path="/news">
-            <News />
+            <NewsContent />
           </Route>
           <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
+            <ContactContent />
           </Route>
         </Switch>
       </div>
       <TheFooter />
     </Router>
   );
-}
-
-function Home() {
-  return <HomeContent />;
-}
-
-function News() {
-  return <NewsContent />;
-}
-
-function Contact() {
-  return <ContactContent />;
 }
