@@ -59,6 +59,14 @@ $pagination-border-color: $color-primary;
 $pagination-focus-color: white;
 $pagination-focus-bg: $color-primary;
 $pagination-disabled-border-color: none;
+$navbar-light-brand-color: $color-primary;
+$navbar-brand-font-size: 20;
+
+.logotest {
+  font-family: $font-playfair;
+  font-weight: bold;
+  font-style: italic;
+}
 
 @import "~bootstrap/scss/bootstrap";
 

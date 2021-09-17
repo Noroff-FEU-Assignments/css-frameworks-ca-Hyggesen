@@ -2,10 +2,13 @@ import React from "react";
 
 import TheCarousel from "../components/Carousel";
 import TheTab from "../components/Tabs";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const HomeContent = () => {
   return (
-    <div>
+    <Container>
       <TheCarousel />
       <h2>We do YAY things</h2>
       <p>
@@ -17,7 +20,7 @@ const HomeContent = () => {
         varius eget massa.
       </p>
       <TheTab />
-    </div>
+    </Container>
   );
 };
 

@@ -7,7 +7,7 @@ import TheContactInfo from "./ContactInfo";
 
 const ContactContent = () => {
   return (
-    <div>
+    <Container>
       <h1>Submit your details</h1>
       <Container>
         <Row>
@@ -26,7 +26,7 @@ const ContactContent = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </Container>
   );
 };
 

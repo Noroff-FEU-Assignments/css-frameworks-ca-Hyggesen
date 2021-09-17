@@ -4,14 +4,11 @@ import Button from "react-bootstrap/Button";
 function TheCard(props) {
   return (
     <div>
-      <Card style={{ width: "18rem" }}>
+      <Card style={{ width: "14rem" }}>
         <Card.Img variant="top" src={props.img} className="thecard" />
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
+          <Card.Title>Nunc porttitor vel</Card.Title>
+          <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
           <Button variant="primary" className="card-button">
             More
           </Button>

@@ -15,7 +15,7 @@ import news7 from "../assets/News images/news-7.jpg";
 import news8 from "../assets/News images/news-8.jpg";
 const NewsContent = () => {
   return (
-    <div>
+    <Container>
       <h1>News</h1>
       <Pagination>
         <PageItem>1</PageItem>
@@ -24,7 +24,7 @@ const NewsContent = () => {
         <PageItem>4</PageItem>
       </Pagination>
       <div>
-        <Container d-flex justify-content-between align-items-center>
+        <Container class="d-flex justify-content-between align-items-center mx-auto">
           <Row>
             <Col md={3} sm={6}>
               <TheCard img={news1} />
@@ -61,7 +61,7 @@ const NewsContent = () => {
         <PageItem>3</PageItem>
         <PageItem>4</PageItem>
       </Pagination>
-    </div>
+    </Container>
   );
 };
 

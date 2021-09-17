@@ -11,7 +11,7 @@
   object-fit: contain;
   overflow: hidden;
   height: auto;
-  width: 100px;
+  width: 140px;
   justify-content: center;
 }
 
@@ -19,6 +19,24 @@
   color: white;
   border: none;
   text-transform: uppercase;
-  width: 80%;
+  width: 90%;
   box-shadow: inset -27px 0 0 0 $color-secondary;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  width: 100%;
+  color: #0a0a0a;
+  font-family: $font-lato;
+  font-size: 20px;
+}
+
+.card-img-top {
+  height: 9rem;
+  object-fit: cover;
 }
