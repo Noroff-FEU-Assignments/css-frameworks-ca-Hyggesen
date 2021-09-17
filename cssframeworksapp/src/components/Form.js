@@ -7,15 +7,13 @@ import FormControl from "react-bootstrap/FormControl";
 function TheForm() {
   return (
     <div>
-      <Form>
+      <Form className="contact-form">
+        <Form.Label>Name</Form.Label>
         <Form.Control type="text" placeholder="Name" />
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
         </Form.Group>
 
         <Form.Group>
@@ -41,7 +39,11 @@ function TheForm() {
           />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button
+          variant="primary"
+          type="submit"
+          className="contact-form--button"
+        >
           Submit
         </Button>
       </Form>

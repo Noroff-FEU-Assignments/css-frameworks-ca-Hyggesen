@@ -1,3 +1,8 @@
+html {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 $color-primary: #e92569;
 $color-secondary: #767676;
 $color-nav-grey: #efefef;
@@ -18,9 +23,6 @@ $input-border-color: $color-input;
 $border-radius: 4px;
 
 $input-placeholder-color: white;
-$nav-link-color: $color-black;
-$nav-link-font-size: 16px;
-$nav-link-font-weight: 400;
 
 $headings-color: $color-primary;
 
@@ -42,6 +44,7 @@ $font-family-base: $font-lato;
 $headings-font-family: $font-playfair;
 $headings-color: $color-primary;
 $headings-font-weight: 400;
+$h1-font-size: 34px;
 
 $nav-tabs-link-active-color: $color-secondary;
 $nav-link-color: $color-primary;
@@ -60,12 +63,30 @@ $pagination-focus-color: white;
 $pagination-focus-bg: $color-primary;
 $pagination-disabled-border-color: none;
 $navbar-light-brand-color: $color-primary;
-$navbar-brand-font-size: 20;
+$navbar-light-brand-hover-color: $color-primary;
+$container-padding-x: 0px;
+$form-label-font-size: 20px;
 
-.logotest {
-  font-family: $font-playfair;
-  font-weight: bold;
-  font-style: italic;
+.footer {
+  width: 100%;
+  background-color: $color-nav-grey;
+
+  &--content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 200px;
+    background-color: $color-nav-grey;
+  }
+
+  &--item {
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.h1-style {
+  margin-top: 30px;
 }
 
 @import "~bootstrap/scss/bootstrap";
@@ -73,3 +94,7 @@ $navbar-brand-font-size: 20;
 @import "./partials/tabs";
 
 @import "./partials//cards";
+
+@import "./partials/navbar";
+
+@import "./partials//contact";

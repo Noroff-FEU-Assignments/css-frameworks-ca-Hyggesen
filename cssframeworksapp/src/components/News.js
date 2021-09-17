@@ -16,7 +16,7 @@ import news8 from "../assets/News images/news-8.jpg";
 const NewsContent = () => {
   return (
     <Container>
-      <h1>News</h1>
+      <h1 className="h1-style">News</h1>
       <Pagination>
         <PageItem>1</PageItem>
         <PageItem>2</PageItem>
