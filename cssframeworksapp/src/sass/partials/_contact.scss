@@ -1,5 +1,5 @@
 .contact-form {
-  box-shadow: 0 16px 22px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
   width: 500px;
 
@@ -9,6 +9,10 @@
     border: none;
     width: 100%;
     padding: 12px;
+
+    &:hover {
+      color: White;
+    }
   }
 }
 
@@ -44,7 +48,7 @@
   margin-left: 10px;
 }
 
-.form-control {
+.theform-input {
   height: 50px;
 }
 
@@ -52,4 +56,13 @@
   border: none;
   background-color: #c7c7c7;
   color: white;
+}
+
+.contact-page-wrapper {
+  margin: 0px;
+  margin-top: 40px;
+}
+
+.no-padding {
+  padding: 0px;
 }

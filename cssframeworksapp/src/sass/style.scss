@@ -66,27 +66,10 @@ $navbar-light-brand-color: $color-primary;
 $navbar-light-brand-hover-color: $color-primary;
 $container-padding-x: 0px;
 $form-label-font-size: 20px;
-
-.footer {
-  width: 100%;
-  background-color: $color-nav-grey;
-
-  &--content {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin-top: 200px;
-    background-color: $color-nav-grey;
-  }
-
-  &--item {
-    align-content: center;
-    justify-content: center;
-  }
-}
+$form-check-input-checked-bg-color: $color-primary;
 
 .h1-style {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 @import "~bootstrap/scss/bootstrap";
@@ -98,3 +81,5 @@ $form-label-font-size: 20px;
 @import "./partials/navbar";
 
 @import "./partials//contact";
+
+@import "./partials//footer";

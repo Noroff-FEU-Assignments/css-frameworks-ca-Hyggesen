@@ -1,10 +1,12 @@
 .search-button {
   border-radius: 0 6px 6px 0;
   color: white;
+  height: 35px;
 }
 
 .mr-2 {
   margin-right: -5px;
+  height: 35px;
 }
 
 .mr-2:focus {
@@ -27,10 +29,12 @@ input:focus {
   border-radius: 5px;
 }
 
-$navbar-light-brand-color: $color-primary;
-$navbar-light-brand-hover-color: $color-primary;
+.thenavbar {
+  padding: 15px 0px;
+}
+
 $navbar-brand-font-size: 20;
-$navbar-padding-y: 15px;
+
 $nav-link-color: $color-black;
 $nav-link-font-size: 16px;
 $nav-link-font-weight: 400;

@@ -1,0 +1,28 @@
+.footer--item img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer {
+  width: 100%;
+  background-color: $color-nav-grey;
+
+  &--content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 200px;
+    background-color: $color-nav-grey;
+    align-items: center;
+    padding: 12px 0px;
+  }
+
+  &--item {
+    align-content: center;
+    justify-content: center;
+
+    p {
+      margin: 0px;
+    }
+  }
+}

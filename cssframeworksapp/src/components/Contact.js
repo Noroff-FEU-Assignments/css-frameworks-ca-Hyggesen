@@ -13,24 +13,22 @@ const ContactContent = () => {
   return (
     <Container>
       <h1 className="h1-style">Submit your details</h1>
-      <Container>
-        <Row>
-          <Col>
-            <TheForm />
-          </Col>
-          <Col>
-            <TheContactInfo content="hello@yay.com" icon={letter} />
-            <TheContactInfo content="123 456 7890" icon={phone} />
-            <TheContactInfo
-              content="123 Some Street
+      <Row className="d-flex contact-page-wrapper no-padding">
+        <Col className="no-padding">
+          <TheForm />
+        </Col>
+        <Col>
+          <TheContactInfo content="hello@yay.com" icon={letter} />
+          <TheContactInfo content="123 456 7890" icon={phone} />
+          <TheContactInfo
+            content="123 Some Street
 Somewhere
 Some City
 10000"
-              icon={map}
-            />
-          </Col>
-        </Row>
-      </Container>
+            icon={map}
+          />
+        </Col>
+      </Row>
     </Container>
   );
 };

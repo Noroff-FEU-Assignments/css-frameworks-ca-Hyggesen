@@ -6,24 +6,23 @@ import Col from "react-bootstrap/Col";
 function TheSonnet(props) {
   return (
     <div>
-      <Container>
-        <Row>
-          <Col xs={4}>
-            <img src={props.image} />
-          </Col>
-          <Col>
-            <p>{props.content}</p>
-            <Container>
-              <Col>
-                <p>SHARE</p>
-              </Col>
-              <Col>
-                <img src={props.icon} />
-              </Col>
-            </Container>
-          </Col>
-        </Row>
-      </Container>
+      <div className="d-flex">
+        <div className="d-flex">
+          <div className="d-flex tabs-content">
+            <img src={props.image} className="tab-image" />
+
+            <div className="d-flex tab-right">
+              <p>{props.content}</p>
+
+              <div className="tabs-social">
+                <p className="share-txt">SHARE</p>
+                <img src={props.icon1} />
+                <img src={props.icon2} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

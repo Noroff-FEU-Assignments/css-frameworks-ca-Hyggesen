@@ -9,11 +9,19 @@ function TheForm() {
     <div>
       <Form className="contact-form">
         <Form.Label>Name</Form.Label>
-        <Form.Control type="text" placeholder="Name" />
+        <Form.Control
+          type="text"
+          placeholder="Name"
+          className="theform-input"
+        />
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control
+            type="email"
+            placeholder="Enter email"
+            className="theform-input"
+          />
         </Form.Group>
 
         <Form.Group>
@@ -23,13 +31,14 @@ function TheForm() {
               placeholder="Username"
               aria-label="Username"
               aria-describedby="basic-addon1"
+              className="theform-input"
             />
           </InputGroup>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" rows={3} />
+          <Form.Control as="textarea" rows={3} className="theform-input" />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicCheckbox">

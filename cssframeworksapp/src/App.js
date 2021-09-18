@@ -21,7 +21,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <Navbar bg="dark" expand="lg">
+        <Navbar bg="dark" expand="lg" className="thenavbar">
           <Container fluid="lg">
             <Navbar.Brand className="brandlogo" href="/">
               The YAY Company
