@@ -8,15 +8,15 @@ function TheSonnet(props) {
     <div>
       <div className="d-flex">
         <div className="d-flex">
-          <div className="d-flex tabs-content">
+          <div className="d-flex tabs-content flex-md-row">
             <img src={props.image} className="tab-image" />
 
             <div className="d-flex tab-right">
               <p>{props.content}</p>
 
               <div className="tabs-social">
-                <p className="share-txt">SHARE</p>
-                <img src={props.icon1} />
+                <p className="share-txt mst">SHARE</p>
+                <img className="mst" src={props.icon1} />
                 <img src={props.icon2} />
               </div>
             </div>

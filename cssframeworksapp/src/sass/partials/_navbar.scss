@@ -7,14 +7,14 @@
 .mr-2 {
   margin-right: -5px;
   height: 35px;
-}
 
-.mr-2:focus {
-  outline: none;
-}
+  &::placeholder {
+    color: $color-secondary;
+  }
 
-input:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .brandlogo {
@@ -22,6 +22,7 @@ input:focus {
   font-weight: bold;
   font-style: italic;
   font-size: 20px;
+  margin-left: 15px;
 }
 
 .active {

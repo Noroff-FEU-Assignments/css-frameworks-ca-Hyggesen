@@ -1,0 +1,31 @@
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.sr-only {
+  display: none;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+
+  li {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+  }
+
+  .active {
+    background-color: $color-primary;
+    border-radius: 2px;
+  }
+}

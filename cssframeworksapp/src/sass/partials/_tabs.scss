@@ -17,9 +17,10 @@
 }
 
 .tabs-content {
-  height: 150px;
+  height: fit-content;
   padding-top: 10px;
   padding-bottom: 20px;
+  flex-direction: column;
 }
 
 .tab-right {
@@ -29,6 +30,8 @@
 
 .tab-image {
   margin-right: 20px;
+  width: 238px;
+  object-fit: contain;
 }
 
 .share-txt {
@@ -36,4 +39,9 @@
 }
 
 .tabs-social {
+  display: -webkit-box;
+}
+
+.mst {
+  margin-right: 15px;
 }

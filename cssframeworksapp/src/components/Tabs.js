@@ -14,7 +14,7 @@ function TheTabs() {
       <Tabs
         defaultActiveKey="first"
         id="uncontrolled-tab-example"
-        className="mb-3"
+        className="mb-3 "
       >
         <Tab eventKey="first" title="First">
           <TheSonnet
