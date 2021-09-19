@@ -29,13 +29,13 @@ export default function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <NavLink exact to="/" className="nav-link" fluid="sm">
+                <NavLink exact to="/" className="nav-link hnc" fluid="sm">
                   Home
                 </NavLink>
-                <NavLink to="/news" className="nav-link">
+                <NavLink to="/news" className="nav-link hnc">
                   News
                 </NavLink>
-                <NavLink to="/contact" className="nav-link">
+                <NavLink to="/contact" className="nav-link hnc">
                   Contact
                 </NavLink>
               </Nav>
@@ -63,7 +63,7 @@ export default function App() {
 
         <Switch>
           <Route exact path="/">
-            <HomeContent />
+            <HomeContent className="setMargins" />
           </Route>
           <Route path="/news">
             <NewsContent />

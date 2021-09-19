@@ -18,7 +18,7 @@ const NewsContent = () => {
     <Container>
       <h1 className="h1-style">News</h1>
       <Pagination>
-        <PageItem>1</PageItem>
+        <PageItem active>{1} </PageItem>
         <PageItem>2</PageItem>
         <PageItem>3</PageItem>
         <PageItem>4</PageItem>
@@ -26,37 +26,37 @@ const NewsContent = () => {
       <div>
         <Container class="d-flex justify-content-between align-items-center mx-auto">
           <Row>
-            <Col md={3} sm={6}>
+            <Col md={6} lg={3} sm={1}>
               <TheCard img={news1} />
             </Col>
-            <Col md={3} sm={6}>
+            <Col md={6} lg={3} sm={1}>
               <TheCard img={news2} />
             </Col>
-            <Col md={3} sm={6}>
+            <Col md={6} lg={3} sm={1}>
               <TheCard img={news3} />
             </Col>
-            <Col md={3} sm={6}>
+            <Col md={6} lg={3} sm={1}>
               <TheCard img={news4} />
             </Col>
           </Row>
           <Row>
-            <Col md={3} sm={6}>
+            <Col md={6} lg={3} sm={1}>
               <TheCard img={news5} />
             </Col>
-            <Col md={3} sm={6}>
+            <Col md={6} lg={3} sm={1}>
               <TheCard img={news6} />
             </Col>
-            <Col md={3} sm={6}>
+            <Col md={6} lg={3} sm={1}>
               <TheCard img={news7} />
             </Col>
-            <Col md={3} sm={6}>
+            <Col md={6} lg={3} sm={1}>
               <TheCard img={news8} />
             </Col>
           </Row>
         </Container>
       </div>
       <Pagination>
-        <PageItem>1</PageItem>
+        <PageItem active>{1}</PageItem>
         <PageItem>2</PageItem>
         <PageItem>3</PageItem>
         <PageItem>4</PageItem>

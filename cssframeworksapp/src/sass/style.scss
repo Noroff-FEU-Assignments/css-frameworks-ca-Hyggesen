@@ -67,8 +67,6 @@ $navbar-light-brand-hover-color: $color-primary;
 $container-padding-x: 0px;
 $form-label-font-size: 20px;
 $form-check-input-checked-bg-color: $color-primary;
-$nav-link-padding-y: 0;
-$nav-link-padding-y: 0;
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -85,3 +83,5 @@ $nav-link-padding-y: 0;
 @import "./partials//general";
 
 @import "./partials//carousel";
+
+@import "./partials//news";

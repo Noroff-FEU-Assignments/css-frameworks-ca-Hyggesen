@@ -6,7 +6,7 @@ import Container from "react-bootstrap/esm/Container";
 function TheFooter(props) {
   return (
     <div className="footer">
-      <Container className="footer--content">
+      <Container className="footer--content flex-column flex-md-row">
         <div className="footer--item">
           <img src={vimeo} />
           <img src={youtube} />

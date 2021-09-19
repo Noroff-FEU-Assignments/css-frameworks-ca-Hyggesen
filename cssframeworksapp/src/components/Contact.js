@@ -13,7 +13,7 @@ const ContactContent = () => {
   return (
     <Container>
       <h1 className="h1-style">Submit your details</h1>
-      <Row className="d-flex contact-page-wrapper no-padding">
+      <Row className="d-flex contact-page-wrapper no-padding flex-column-reverse flex-lg-row ">
         <Col className="no-padding">
           <TheForm />
         </Col>
