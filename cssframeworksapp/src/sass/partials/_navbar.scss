@@ -25,9 +25,11 @@
   margin-left: 15px;
 }
 
-.active {
+.nav-link.active {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 3px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 .thenavbar {
